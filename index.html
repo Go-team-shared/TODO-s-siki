@@ -1,34 +1,36 @@
-
 <!DOCTYPE html>
-<html lang="en-US">
-<link href="style.css" rel="stylesheet" \>
-    <head>
-    <title>TODOs</title>
-    </head>
-
-    <body>
-        <main>
-            <h1>todos:</h1>
-            <lu>
-                <li>
-                    <mision><span style="color:black">mision- 1</span></mision>
-                    <status><input type="checkbox" name="Status"/> <label for="Status">finished?</label></status>
-                    <date><input type="date" /></date>
-                </li>
-                <li>
-                    <mision><span style="color:black">mision- 2</span></mision>
-                    <status><input type="checkbox" name="Status"/> <label for="Status">finished?</label></status>
-                    <date><input type="date" /></date>
-                </li>
-                <li>
-                    <mision><span style="color:black">mision- 3</span></mision>
-                    <status><input type="checkbox" name="Status"/> <label for="Status">finished?</label></status>
-                    <date><input type="date" /></date>
-                </li>
-            </lu>
-        </main>
-        <footer>
-            <p>Author: <a href="mailto:siki.l@masterschool.com"> Siki</a></p>
-        </footer>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO's</title>
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <button id="clear-all"> delete all missions</button>
+    </div>
+    <div>
+        <h2>Add  New Mission</h2>
+        <div id="insert-mission">
+            <input type="text" id="missionName" placeholder="Mission Name" />
+            <input type="date" id="missionDate" />
+            <button id="addMission">Add Mission</button>
+        </div>
+    </div>
+    <div id="mission-list">
+        <div>
+            <h2>Unfinished Missions</h2>
+            <div id="unfinishedMissions"></div>
+        </div>
+        <div>
+            <h2>Finished Missions</h2>
+            <div id="finishedMissions"></div>
+        </div>
+    </div>
+    
+    <!-- Link the JavaScript file -->
+    <script src="script.js"></script>
+</body>
 </html>
