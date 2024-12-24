@@ -1,0 +1,55 @@
+html {
+  font-size: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex; /* Use flexbox layout for body */
+  flex-direction: column; /* Stack elements vertically */
+  width: 480px;
+  height: 100vh; /* Full height of the viewport */
+  border: 3px dashed black;
+  color: black;
+  margin: 0; /* Remove default margin */
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  background-color: gray;
+}
+
+li {
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  font-size: 20px;
+  background-color: gainsboro;
+  border: 2px solid black;
+  display: block;
+}
+
+mision, date, status {
+  display: inline-block;
+  border: 3px solid green;
+  padding: 10px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+date {
+  padding: 8.6px;
+}
+
+footer {
+  font-size: 20px;
+  margin-top: auto; /* Push the footer to the bottom */
+  text-align: left;
+}
+
+input[type="date"] {
+  font-size: 20px;
+}
